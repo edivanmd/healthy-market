@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { itim } from '../constants/fonts';
 
-import {Query} from ".";
+import { Query } from ".";
 import GetAllCategories from "../graphql/categories";
 
 const categories = () => {
@@ -15,7 +15,6 @@ const categories = () => {
         <Query query={GetAllCategories}>
             {({data:allCategories}) => {
                 const coder = allCategories.categories.data
-                console.log(coder)
         
                 return(
                     <>
