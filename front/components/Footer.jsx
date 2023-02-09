@@ -1,5 +1,3 @@
-'use client'
-
 import { Textandicon, Logo, Socialmedias } from '.';
 import { CiPhone, CiLocationOn, CiClock2, CiMail } from 'react-icons/ci';
 

@@ -1,5 +1,3 @@
-'use client'
-
 import { solitreo } from '../constants/fonts';
 
 const Logo = () => {

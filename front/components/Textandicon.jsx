@@ -1,5 +1,3 @@
-'use client'
-
 const Textandicon = ({ text, icon}) => {
   return (
     <div className='flex items-center gap-1'>

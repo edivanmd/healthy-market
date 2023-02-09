@@ -1,5 +1,3 @@
-'use client'
-
 import { solitreo } from '../constants/fonts';
 import { BsCart4, BsHeart, BsPerson } from 'react-icons/bs';
 import { Logo, Navbar } from './'

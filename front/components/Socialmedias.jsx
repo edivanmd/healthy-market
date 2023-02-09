@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link';
 import { CiTwitter, CiFacebook, CiInstagram, CiYoutube } from 'react-icons/ci';
 
