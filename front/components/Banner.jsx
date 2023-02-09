@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Image from 'next/image';
+import Image from 'next/image'; 
 import Link from 'next/link'; 
 import { RxDotFilled, RxArrowRight } from 'react-icons/rx';
 import { itim } from '../constants/fonts';
