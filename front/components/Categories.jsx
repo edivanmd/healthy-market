@@ -8,7 +8,7 @@ import GetAllCategories from "../graphql/categories";
 const categories = () => {
  
   return (
-    <div className='max-w-[1100px] m-auto py-10 px-5'>
+    <div className='max-w-[1100px] m-auto py-16 px-5 border-b-4'>
         <h2 className={`${itim.className} text-basic-blue text-5xl tracking-tighter`}>Shop <span className='text-basic-green'>by categories</span></h2>
         <ul className='flex flex-wrap max-w-[1100px] m-auto justify-center gap-10 pt-5'>
             

@@ -7,6 +7,8 @@ import Banner from './Banner';
 import Categories from './Categories';
 import Socialmedias from './Socialmedias';
 import Footer from './Footer';
+import Products from './Products';
+import Product from './Product';
 import Query from './Query';
 
 export {
@@ -19,5 +21,7 @@ export {
     Categories,
     Socialmedias,
     Footer,
+    Products,
+    Product,
     Query,
 };

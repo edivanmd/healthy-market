@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import { Banner, Header, Categories, Footer } from '../components'
+import { poppins } from '../constants/fonts'
+import { Banner, Header, Categories, Footer, ProductsGrid, Products } from '../components'
 
 export default function Home() {
   return (
@@ -10,11 +11,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className={poppins.className}>
 
         <Header />
         <Banner />
         <Categories />
+        <Products title1="Popular" title2="Products" />
         <Footer />
 
       </main>
