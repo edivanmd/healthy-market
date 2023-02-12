@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "big_banners",
+  "info": {
+    "singularName": "big-banner",
+    "pluralName": "big-banners",
+    "displayName": "Big banner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "btn_text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bgcolor": {
+      "type": "string"
+    }
+  }
+}

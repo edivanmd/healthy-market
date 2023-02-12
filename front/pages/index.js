@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { poppins } from '../constants/fonts'
-import { Banner, Header, Categories, Footer, ProductsGrid, Products } from '../components'
+import { Banner, Header, Categories, Footer, Products } from '../components'
 
 export default function Home() {
   return (

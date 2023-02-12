@@ -1,27 +1,13 @@
-import Header from './Header';
-import SmallBanner from './SmallBanner';
-import Textandicon from './Textandicon';
-import Logo from './Logo';
-import Navbar from './Navbar';
-import Banner from './Banner';
-import Categories from './Categories';
-import Socialmedias from './Socialmedias';
-import Footer from './Footer';
-import Products from './Products';
-import Product from './Product';
-import Query from './Query';
-
-export {
-    Header,
-    SmallBanner,
-    Textandicon,
-    Logo,
-    Navbar,
-    Banner,
-    Categories,
-    Socialmedias,
-    Footer,
-    Products,
-    Product,
-    Query,
-};
+export { default as Header } from './Header';
+export { default as Slider } from './Slider';
+export { default as SmallBanner } from './SmallBanner';
+export { default as Textandicon } from './Textandicon';
+export { default as Logo } from './Logo';
+export { default as Navbar } from './Navbar';
+export { default as Banner } from './Banner';
+export { default as Categories } from './Categories';
+export { default as Socialmedias } from './Socialmedias';
+export { default as Footer } from './Footer';
+export { default as Products } from './Products';
+export { default as Product } from './Product';
+export { default as Query } from './Query';
