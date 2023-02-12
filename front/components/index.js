@@ -11,3 +11,4 @@ export { default as Footer } from './Footer';
 export { default as Products } from './Products';
 export { default as Product } from './Product';
 export { default as Query } from './Query';
+export { default as BtnArrow } from './BtnArrow';

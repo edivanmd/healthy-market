@@ -34,6 +34,7 @@ a.greenLink{
 a.greenLink:hover { color: theme('colors.basic-green'); }
 a.greenLinkIcon:hover { background-color: theme('colors.basic-green'); }
 
+.btnArrow:hover .btnArrowIcon { margin-left: 5px; }
 
 .prodTag {
   --d: 6px; /* folded part */

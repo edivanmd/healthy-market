@@ -1,6 +1,4 @@
-import Link from 'next/link';
-import { RxArrowRight } from 'react-icons/rx';
-import {Query} from ".";
+import {BtnArrow, Query} from ".";
 import { itim } from '../constants/fonts';
 import GetSmallBannersQuery from "../graphql/small-banners";
 
@@ -19,9 +17,7 @@ const SmallBanner = () => {
             > 
               <h2 className='text-basic-blue text-3xl tracking-tighter'>{banner.attributes.title} </h2>
               <h3 className='text-5xl tracking-tighter text-white'>{banner.attributes.subtitle}</h3>  
-              <Link href={banner.attributes.link} className="bg-green-400 duration-500 hover:bg-green-900 hover:text-white font-bold py-2 px-4 rounded text-basic-blue mt-5 flex items-center float-left gap-2">
-                {banner.attributes.text_btn} <RxArrowRight />
-              </Link>   
+              <BtnArrow text={banner.attributes.text_btn} link={banner.attributes.link} />
             </li>
           ))}
         </ul>

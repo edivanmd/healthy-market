@@ -1,8 +1,3 @@
-import { useState } from 'react';
-import Image from 'next/image'; 
-import Link from 'next/link'; 
-import { RxDotFilled } from 'react-icons/rx';
-import { itim } from '../constants/fonts';
 import { SmallBanner, Slider } from '.';
 
 
