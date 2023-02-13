@@ -1,8 +1,7 @@
-import Link from "next/link";
 import { itim } from '../constants/fonts';
 import { Product } from "."
 
-import {Query} from ".";
+import { Query } from ".";
 import GetAllProducts from "../graphql/products";
 
 const Products = ({ title1, title2 }) => {
@@ -12,7 +11,7 @@ const Products = ({ title1, title2 }) => {
             <h2 className={`${itim.className} text-5xl tracking-tighter`}>{title1} <span className='text-basic-green'>{title2}</span></h2>
         }
         
-        <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pt-5">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 pt-5">
             <Query query={GetAllProducts}>
                 {({data:allProducts}) => {
                     const coder = allProducts.products.data

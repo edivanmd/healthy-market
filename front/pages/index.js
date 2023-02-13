@@ -15,11 +15,15 @@ export default function Home() {
 
         <Header />
         <Banner />
-        <Categories />
-        <Products title1="Popular" title2="Products" />
+        {/* <Categories />
+        <Products title1="Popular" title2="Products" /> */}
         <Footer />
 
       </main>
     </>
   )
 }
+
+// export async function getStaticProps() {
+//   const { data } = await client.query
+// }

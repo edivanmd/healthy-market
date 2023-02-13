@@ -1,26 +1,16 @@
 import { gql } from '@apollo/client';
 
 const GetSmallBannersQuery = gql`
-    query smallBanners {
+    query smallBanner {
         smallBanners {
-        data {
             id
-            attributes {
             title
             subtitle
-            link
-            text_btn
             color
+            textBtn
             image {
-                data {
-                id
-                attributes {
-                    url
-                }
-                }
+                url
             }
-            }
-        }
         }
     }
   `;

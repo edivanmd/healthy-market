@@ -8,14 +8,16 @@ const Product = ({ product }) => {
   return (
       <div className='p-2'>
           <p className=''>
-            <Image
-              src={product.attributes.image.data.attributes.url}
-              width={270}
-              height={270}
-              priority
-              alt={product.attributes.name}
-              className='m-auto w-[270px]'
-            />  
+            <Link href={`/product/${product.attributes.name}`}>
+              <Image
+                src={product.attributes.image.data.attributes.url}
+                width={270}
+                height={270}
+                priority
+                alt={product.attributes.name}
+                className='m-auto w-[270px]'
+              />  
+            </Link>
           </p>
 
           <ul className='flex gap-2'>
@@ -30,12 +32,12 @@ const Product = ({ product }) => {
 
           <p className='text-base tracking-normal font-bold my-2'>{product.attributes.name}</p>
           
-          <div className='flex items-center'>
+          <div className='flex flex-col min-[500px]:flex-row'>
             <div className='flex w-full items-baseline gap-2'>
                 <p className='text-lg tracking-tight font-bold'>${product.attributes.price} </p>
                 <p className='line-through text-gray-400 text-sm'>${product.attributes.old_price} </p>
             </div>
-            <Link href='/' className="bg-green-400 duration-500 hover:bg-green-900 hover:text-white font-bold py-2 px-4 rounded w-fit">
+            <Link href={`/product/${product.attributes.name}`} className="bg-green-400 duration-500 hover:bg-green-900 hover:text-white font-bold py-2 px-4 text-sm rounded w-auto self-end">
                 Buy
             </Link>   
           </div>

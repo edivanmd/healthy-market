@@ -1,25 +1,15 @@
 import { gql } from '@apollo/client';
 
 const GetBigBannersQuery = gql`
-    query bigBanners {
+    query bigBanner {
         bigBanners {
-            data {
-                id
-                attributes {
-                title
-                desc
-                link
-                btn_text
-                bgcolor
-                image {
-                    data {
-                    id
-                    attributes {
-                        url
-                    }
-                    }
-                }
-                }
+            id
+            title
+            desc
+            bgcolor
+            btnText
+            image {
+                url
             }
         }
     }
