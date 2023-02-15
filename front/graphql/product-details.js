@@ -1,41 +1,24 @@
 import { gql } from '@apollo/client';
 
-const GetProductDetail = gql`
-query GetProductDetail {
-    product {
-        data {
-            id
-            attributes {
-                name
-                price
-                old_price
-                small_desc
-                full_desc
-                link
-                is_new
-                is_promo
-                is_popular
-                tag
-                categories {
-                    data{
-                      id
-                        attributes {
-                        name
-                        link
-                      }
-                    }
-                }
-                image {
-                    data {
-                        id
-                        attributes {
-                            url
-                        }
-                    }
-                }
-            }
+const GetProductDetailQuery = gql`
+query GetProductDetail($slug: String!) {
+    product(where: { slug: $slug }) {
+        id
+        name
+        smallDescription
+        fullDescription {
+            raw
         }
-    }
+        oldPrice
+        currentPrice
+        categories {
+            name
+            slug
+        }
+        image {
+            url
+        }
+      }
 }`;
 
-export default GetProductDetail;
+export default GetProductDetailQuery;

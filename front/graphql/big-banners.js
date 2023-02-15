@@ -6,7 +6,10 @@ const GetBigBannersQuery = gql`
             id
             title
             desc
-            bgcolor
+            slug
+            bgColor {
+                hex
+            }
             btnText
             image {
                 url

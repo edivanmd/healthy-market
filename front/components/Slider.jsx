@@ -15,10 +15,8 @@ const Slider = () => {
       <Query query={GetBigBannersQuery}>
           {({data:bigBanners}) => {
             const coder = bigBanners.bigBanners
-            console.log(coder)
 
-            return (
-                                                                                     
+            return (                                                                    
               <Swiper 
                 modules={[Navigation, Pagination, Autoplay]} 
                 pagination={{clickable: true}} 
@@ -30,12 +28,12 @@ const Slider = () => {
                 className='h-[300px] sm:h-auto w-[100%] sm:w-[70%]'
               >
                 {coder.map((banner) => (
-                  <SwiperSlide key={banner.id} className='w-full h-full rounded-md duration-500 p-8 text-left flex flex-col gap-2' style={{ backgroundColor: `${banner.bgcolor}` }}>
-                    <h2 class={`${itim.className} text-white text-5xl sm:text-7xl tracking-tighter before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-600 relative inline-block`}>
-                      <span class="relative text-white">{banner.title}</span>
+                  <SwiperSlide key={banner.id} className='w-full h-full rounded-md duration-500 p-8 text-left flex flex-col gap-2' style={{ backgroundColor: `${banner.bgColor.hex}` }}>
+                    <h2 className={`${itim.className} text-white text-5xl sm:text-7xl tracking-tighter before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-600 relative inline-block`}>
+                      <span className="relative text-white">{banner.title}</span>
                     </h2>
                     <p className='text-basic-blue text-xs sm:text-lg font-bold w-[50%] my-4'>{banner.desc}</p>
-                    <BtnArrow text={banner.btnText} link='/' />
+                    <BtnArrow text={banner.btnText} link={`/product/${banner.slug}`} />
                     <Image
                       src={banner.image.url}
                       width={500}

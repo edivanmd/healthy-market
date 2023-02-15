@@ -1,4 +1,4 @@
-const Textandicon = ({ text, icon}) => {
+const TextAndIcon = ({ text, icon}) => {
   return (
     <div className='flex items-center gap-1'>
         {icon}
@@ -9,4 +9,4 @@ const Textandicon = ({ text, icon}) => {
   )
 }
 
-export default Textandicon
+export default TextAndIcon

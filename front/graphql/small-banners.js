@@ -6,7 +6,10 @@ const GetSmallBannersQuery = gql`
             id
             title
             subtitle
-            color
+            slug
+            bgColor {
+                hex
+            }
             textBtn
             image {
                 url

@@ -1,12 +1,13 @@
 import { gql } from '@apollo/client';
 
-const GetAllProductsQuery = gql`
-    query GetAllProducts {
-        products {
+const GetPopularProductsQuery = gql`
+    query GetPopularProducts ($isPopular: Boolean!) {
+        products(where: { isPopular: $isPopular }) {
             id
             name
             currentPrice
             oldPrice
+            slug
             image {
               url
             }
@@ -20,4 +21,4 @@ const GetAllProductsQuery = gql`
     }
 `;
 
-export default GetAllProductsQuery;
+export default GetPopularProductsQuery;

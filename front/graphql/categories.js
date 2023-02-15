@@ -1,19 +1,17 @@
 import { gql } from '@apollo/client';
 
-const GetAllCategories = gql`
+const GetAllCategoriesQuery = gql`
     query GetAllCategories {
         categories {
-        data {
             id
-            attributes {
-            background_color
-            link
-                image_link
-                name
+            name
+            slug
+            bgColor {
+                hex
             }
-        }
+            imageLink
         }
     }
   `;
 
-export default GetAllCategories;
+export default GetAllCategoriesQuery;

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { CiTwitter, CiFacebook, CiInstagram, CiYoutube } from 'react-icons/ci';
 
-const Socialmedias = ({ position }) => {
+const SocialMedias = () => {
 
     const linksSocialMedia = [
         {icon: <CiTwitter size={20}/>, path: '/'},
@@ -21,4 +21,4 @@ const Socialmedias = ({ position }) => {
     );
 }
 
-export default Socialmedias
+export default SocialMedias;

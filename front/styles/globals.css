@@ -76,3 +76,4 @@ a.greenLinkIcon:hover { background-color: theme('colors.basic-green'); }
 .tagNew::before{ background-color: #27CA7D; }
 .tagSale::before{ background-color: #67BCEE; }
 .tagHot::before{ background-color: #F74B81; }
+.tagNone::before{ background-color:#fff; display: none; }

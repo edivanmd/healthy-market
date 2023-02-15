@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { Socialmedias } from '.';
-import { CiPhone } from 'react-icons/ci';
+import { SocialMedias } from '.';
 import { RiCloseCircleFill, RiMenu2Fill } from 'react-icons/ri';
 
 const Navbar = () => {
@@ -10,10 +9,10 @@ const Navbar = () => {
 
     const navLinks = [
         {name: 'Home', path: '/'},
-        {name: 'About', path: '/about'},
-        {name: 'Shop', path: '/shop'},
-        {name: 'Our Team', path: '/our-tem'},
-        {name: 'Contact', path: '/contact'},
+        // {name: 'About', path: '/about'},
+        // {name: 'Shop', path: '/shop'},
+        // {name: 'Our Team', path: '/our-tem'},
+        // {name: 'Contact', path: '/contact'},
     ]
 
     const handleNavbar = () => { setNav(!nav); }
@@ -53,21 +52,7 @@ const Navbar = () => {
             </div>
 
             <div className='flex items-center gap-3 justify-between'>
-                {/* <ul className='flex gap-2 md:border-white md:border-r-2 md:pr-3'>
-                    {linksSocialMedia.map((link, index) => (
-                        <li key={index}>
-                            <Link href={link.path} className='greenLink'>{link.icon}</Link>
-                        </li>
-                    ))}
-                </ul> */}
-                <Socialmedias />
-{/* 
-                <div className='hidden md:flex items-center gap-1'>
-                    <CiPhone fontSize={20} />
-                    <div className='flex flex-col items-center'>
-                        <p className='text-sm '>(406) 555-0122</p>
-                    </div>
-                </div> */}
+                <SocialMedias />
             </div>
 
         </div>
