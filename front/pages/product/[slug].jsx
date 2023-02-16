@@ -49,14 +49,14 @@ const ProductDetails = ({ product }) => {
     };
 
   return (
-      <div className='max-w-[1100px] m-auto flex justify-between gap-3 flex-col sm:flex-row py-3 px-5'>
+      <div className='max-w-[1100px] m-auto flex justify-between gap-3 flex-col lg:flex-row py-3 px-5'>
          <Image
             src={product.image.url}
             width={550}
             height={550}
             priority
             alt={product.name}
-            className='border border-gray-300 rounded-md h-fit'
+            className='border border-gray-300 rounded-md h-fit mx-auto w-[80%] sm:w-[50%]'
          />  
          <div>
             <ul className='flex gap-2'>
@@ -89,7 +89,7 @@ const ProductDetails = ({ product }) => {
 
 export async function getStaticPaths() {
    const { data } = await client.query({ query: GetAllProductsSlugsQuery })
-   
+
    return {
       paths: data.products.map((product) => ({ params: { slug: product.slug } })),
       fallback: false,
@@ -103,7 +103,7 @@ export async function getStaticProps({ params }) {
    return {
       props: {
          product: product,
-      },
+      }, revalidate: 10,
    };
  }
  

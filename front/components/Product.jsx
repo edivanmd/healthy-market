@@ -22,7 +22,7 @@ const Product = ({ product }) => {
           <ul className='flex gap-2'>
             {product.categories.map((category) => (
               <li key={category.name} className='text-[0.65rem] text-basic-green font-bold'>
-                <Link href='/' className='hover:underline'>
+                <Link href={`/category/${category.slug}`} className='hover:underline'>
                  {category.name} 
                 </Link>
               </li>

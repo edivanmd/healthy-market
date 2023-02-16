@@ -27,7 +27,7 @@ const categories = () => {
                                 alt={category.name}
                                 className="m-auto"
                             />
-                            <p className='font-bold text-xs'>{category.name}</p>
+                            <p className='font-bold text-xs text-white'>{category.name}</p>
                         </Link>
                         </li>
                     ))}

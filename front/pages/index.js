@@ -4,6 +4,15 @@ import { QueryVar } from ".";
 import GetPopularProductsQuery from "../graphql/products-popular";
 import client from "../utils/apollo-client";
 
+// export async function getServerSideProps() {
+//   const isPopular = true; 
+//   const { data } = await client.query({ query: GetPopularProductsQuery, variables: {isPopular}});
+//   const products = data.products
+
+//   // Pass data to the page via props
+//   return { props: { products, } }
+// }
+
 
 export async function getStaticProps() {
   const isPopular = true; 
@@ -11,8 +20,10 @@ export async function getStaticProps() {
   const products = data.products
 
   return {
-     props: { products },
-  };
+     props: { 
+      products,
+    }, revalidate: 10,
+  }
 }
 
 export default function Home({products}) {

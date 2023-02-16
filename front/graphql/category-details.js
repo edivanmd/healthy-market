@@ -7,7 +7,7 @@ const GetCategoryDetailQuery = gql`
             bgColor{
                 hex
             }
-            products {
+            products(last: 1000) {
                 id
                 name
                 currentPrice
@@ -18,6 +18,7 @@ const GetCategoryDetailQuery = gql`
                 }
                 categories {
                     name
+                    slug
                 }
                 image {
                     url

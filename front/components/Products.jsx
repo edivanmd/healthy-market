@@ -3,7 +3,7 @@ import { Product } from "."
 
 const Products = ({ title1, title2, products }) => {
 
-  return (
+    return (
     <div className="max-w-[1100px] m-auto py-10 px-5">
         {title1 && 
             <h2 className={`${itim.className} text-5xl tracking-tighter`}>{title1} <span className='text-basic-green'>{title2}</span></h2>
