@@ -7,8 +7,6 @@ import GetProductDetailQuery from "../../graphql/product-details";
 import client from "../../utils/apollo-client";
 
 const ProductDetails = ({ product }) => {
-   console.log(product)
-
    const getContentFragment = (index, text, obj, type) => {
       let modifiedText = text;
   

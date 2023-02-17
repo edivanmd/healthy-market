@@ -18,7 +18,8 @@ const categories = () => {
                 return(
                     <>
                     {coder.map((category) => (
-                        <li key={category.id} style={{ backgroundColor: `${category.bgColor.hex}` }} className='hover:shadow-md hover:shadow-gray-500 shadow-md shadow-gray-300 duration-500 w-24 h-24 rounded-lg flex items-center'>
+                        <li style={{ backgroundImage: `radial-gradient(farthest-side at 130% 130%, #e3e3e3 5%, ${category.bgColor.hex})` }} key={category.id} className={`hover:shadow-md hover:shadow-gray-500 shadow-md shadow-gray-300 duration-500 w-20 h-20 rounded-lg flex items-center`}>
+
                         <Link href={`/category/${category.slug}`} className='w-full text-center flex flex-col align-middle'>
                             <Image
                                 src={category.imageLink}
@@ -27,7 +28,7 @@ const categories = () => {
                                 alt={category.name}
                                 className="m-auto"
                             />
-                            <p className='font-bold text-xs text-white'>{category.name}</p>
+                            <p className='font-bold text-xs text-white duration-500'>{category.name}</p>
                         </Link>
                         </li>
                     ))}

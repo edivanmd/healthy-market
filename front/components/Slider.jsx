@@ -15,8 +15,7 @@ const Slider = () => {
       <Query query={GetBigBannersQuery}>
           {({data:bigBanners}) => {
             const coder = bigBanners.bigBanners
-
-
+            
             return (                                                                    
               <Swiper 
                 modules={[Navigation, Pagination, Autoplay]} 

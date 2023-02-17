@@ -80,3 +80,4 @@ a.greenLinkIcon:hover { background-color: theme('colors.basic-green'); }
 
 .catColorTitle::before{ background-color: var(--background) }
 .bannerColorTitle{ color: var(--textColor) }
+/* .catLink:hover p{opacity: 1} */
