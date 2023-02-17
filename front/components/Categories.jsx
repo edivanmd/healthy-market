@@ -1,15 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { itim } from '../constants/fonts';
-
-import { Query } from ".";
+import { Query, TitleBicolor } from ".";
 import GetAllCategoriesQuery from "../graphql/categories";
 
 const categories = () => {
  
   return (
     <div className='max-w-[1100px] m-auto py-16 px-5 border-b-4'>
-        <h2 className={`${itim.className} text-basic-blue text-5xl tracking-tighter`}>Shop <span className='text-basic-green'>by categories</span></h2>
+        <TitleBicolor title1="Shop" title2="by categories" />
         <ul className='flex flex-wrap max-w-[1100px] m-auto justify-center gap-10 pt-5'>
             
         <Query query={GetAllCategoriesQuery}>

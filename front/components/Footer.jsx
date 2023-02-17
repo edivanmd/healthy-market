@@ -1,4 +1,4 @@
-import { TextAndIcon, Logo, SocialMedias } from '.';
+import { TextAndIcon, SocialMedias } from '.';
 import { HiOutlinePhone, HiOutlineLocationMarker, HiOutlineClock, HiOutlineMail } from 'react-icons/hi';
 
 const Footer = () => {

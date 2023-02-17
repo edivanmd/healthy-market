@@ -10,6 +10,4 @@ const BreadcrumbItem = ({ children, href, isCurrent, ...props }) => {
   );
 };
 
-//{`${ product.tag.name ? `tag${product.tag.name} prodTag leftTag` : ''} 
-
 export default BreadcrumbItem;

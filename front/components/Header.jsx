@@ -1,5 +1,5 @@
-// import { BsCart4, BsHeart, BsPerson } from 'react-icons/bs';
 import { Logo, Navbar } from './'
+// import { BsCart4, BsHeart, BsPerson } from 'react-icons/bs';
 // import Link from 'next/link';
 
 const Header = () => {

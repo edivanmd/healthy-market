@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { InternalBanner, Query } from '../components'
+import { InternalBanner, Query, TitleBicolor } from '../components'
 import GetAboutSliderImagesQuery from "../graphql/about-slider-images";
 import GetAboutProvisionsQuery from "../graphql/about-provisions";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -55,17 +55,19 @@ const About = () => {
           </div>
 
           <div>
-            <h3 className={`${itim.className} text-5xl sm:text-5xl tracking-tighter mb-5 m-auto text-center sm:text-left`}>Welcome to <span className={`${solitreo.className} text-basic-green`}>Healty Market</span></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur, tellus dapibus sollicitudin imperdiet, dolor augue porttitor dui, sed tempus odio metus fringilla ex. Praesent neque nulla, ullamcorper id sagittis in, dapibus vel turpis. Ut gravida nec metus non rutrum. Donec a dui in lectus viverra fringilla vel eget mi. Cras turpis ligula, sagittis in turpis id, egestas gravida justo. Sed suscipit, ex sed ultrices convallis, purus lacus vehicula purus, et iaculis lacus enim vel nulla. In hac habitasse platea dictumst.
-                <br/>
-                Aliquam libero mi, consequat et mattis ut, vulputate ac arcu. Nam luctus ligula in sapien porttitor, non sagittis ante posuere. Aenean congue sapien id aliquet tristique. Vivamus hendrerit posuere nisi, sit amet suscipit tortor. Nam turpis ipsum, fringilla ut lectus sit amet, rutrum malesuada enim. Vivamus rhoncus enim massa, a commodo dolor tempor ut. Donec aliquam sit amet ipsum nec fermentum.
+            <TitleBicolor title1="Welcome to" title2="Healthy Market" />
+            <p className='pt-4'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur, tellus dapibus sollicitudin imperdiet, dolor augue porttitor dui, sed tempus odio metus fringilla ex. Praesent neque nulla, ullamcorper id sagittis in, dapibus vel turpis. Ut gravida nec metus non rutrum. Donec a dui in lectus viverra fringilla vel eget mi. Cras turpis ligula, sagittis in turpis id, egestas gravida justo. Sed suscipit, ex sed ultrices convallis, purus lacus vehicula purus, et iaculis lacus enim vel nulla. In hac habitasse platea dictumst.
+              <br/>
+              Aliquam libero mi, consequat et mattis ut, vulputate ac arcu. Nam luctus ligula in sapien porttitor, non sagittis ante posuere. Aenean congue sapien id aliquet tristique. Vivamus hendrerit posuere nisi, sit amet suscipit tortor. Nam turpis ipsum, fringilla ut lectus sit amet, rutrum malesuada enim. Vivamus rhoncus enim massa, a commodo dolor tempor ut. Donec aliquam sit amet ipsum nec fermentum.
             </p>
           </div>
         </div>
           
 
-        <h3 className={`${itim.className} text-5xl tracking-tighter mb-5 m-auto text-center mt-10`}>What we <span className="text-basic-green">Provide</span></h3>
+        <div className='text-center pt-16 pb-10'>
+          <TitleBicolor title1="What we" title2="provide" />
+        </div>
           
         <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4'>
           <Query query={GetAboutProvisionsQuery}>
