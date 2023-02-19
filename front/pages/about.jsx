@@ -4,7 +4,7 @@ import GetAboutSliderImagesQuery from "../graphql/about-slider-images";
 import GetAboutProvisionsQuery from "../graphql/about-provisions";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from "swiper";
-import { itim, solitreo } from '@/constants/fonts';
+import { itim } from '@/constants/fonts';
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -73,7 +73,6 @@ const About = () => {
           <Query query={GetAboutProvisionsQuery}>
             {({data:GetAboutProvisions}) => {
               const coder = GetAboutProvisions.aboutProvisions
-              console.log(coder)
 
               return (
                 <>
